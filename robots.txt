@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://goonyogunyo-prog.github.io/gourmet-guide/sitemap.xml
