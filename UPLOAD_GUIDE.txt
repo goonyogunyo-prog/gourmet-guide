@@ -1,0 +1,35 @@
+グルメサイト更新パック 2026-10-15 07:18 JST
+対象: https://github.com/goonyogunyo-prog/gourmet-guide
+
+【新規追加】
+- shinjuku-nomihodai-course.html
+
+【既存ファイルを上書き】
+- index.html
+- articles.html
+- style.css
+- sitemap.xml
+
+【アップロードしない】
+- UPLOAD_GUIDE.txt
+
+手順:
+1. ZIPを解凍。
+2. GitHubの goonyogunyo-prog/gourmet-guide の最上位へ上記HTML/CSS/XML 5ファイルをアップロード・上書き。
+3. Commit changes を実行。
+4. 公開後に /gourmet-guide/shinjuku-nomihodai-course.html が開くか確認。
+5. Search Console: サイトマップが「成功」なら毎回の再送信は不要。
+6. 新記事URLをURL検査し、必要ならインデックス登録をリクエスト。
+   https://goonyogunyo-prog.github.io/gourmet-guide/shinjuku-nomihodai-course.html
+
+注意: GitHubで確認できた現行構成(11 URL)を基準に作成。前回配布した未反映の新記事
+(lunch-reservation-guide.html, buffet-price-check.html) は含めていません。
+もしこれらも公開したい場合は、その記事を追加した後にサイトマップを統合してください。
+記事内の公式ページへのリンクはアフィリエイト広告ではなく、現状の収益は発生しません。
+
+確認した公式情報 (2026-10-15):
+- https://torigen-shinjukunishi.owst.jp/courses/213409992
+- https://regalo.dkdining.com/shinjuku/course/
+- https://shinjuku-inton.com/course/
+- https://jibundoki.dkdining.com/shinjuku/course/
+- https://sumishun-shinjuku.com/course/

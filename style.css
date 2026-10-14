@@ -1,1 +1,21 @@
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,'Noto Sans JP',sans-serif;color:#252525;background:#fffaf5;line-height:1.8}header{background:#fff;padding:18px max(20px,calc((100% - 1050px)/2));border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}a{color:#a74323}nav a{margin-left:16px;text-decoration:none;color:#333}.logo{font-size:1.4rem;font-weight:800;color:#a74323;text-decoration:none}.hero{background:#fbe5d5;padding:72px 20px;text-align:center}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.4;margin:0}.hero p{max-width:650px;margin:18px auto}.wrap{max-width:1050px;margin:auto;padding:48px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}.card{background:white;border:1px solid #eee;border-radius:16px;padding:24px;box-shadow:0 5px 20px #4d260b0a}.card h3{margin-top:0}.button{display:inline-block;background:#a74323;color:white;text-decoration:none;padding:10px 20px;border-radius:9px}footer{background:#302720;color:white;padding:35px 20px;text-align:center}footer a{color:white;margin:0 10px}.notice{font-size:.85rem;color:#666}h2{font-size:1.6rem}article{max-width:780px;margin:auto;padding:45px 20px}article h2{margin-top:35px}li{margin-bottom:9px}@media(max-width:600px){nav a{margin-left:8px;font-size:.9rem}.hero{padding:50px 18px}}
+
+/* 2026-10-15: コース比較・アクセシビリティ改善 */
+:focus-visible{outline:3px solid #156cbd;outline-offset:3px}
+.skip-link{position:absolute;left:12px;top:-100px;background:#fff;padding:10px 16px;z-index:99}.skip-link:focus{top:10px}
+.site-header{position:relative;z-index:2}.eyebrow{font-size:.86rem;font-weight:800;letter-spacing:.05em;color:#954323}
+.featured-panel{display:flex;gap:22px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #e7d4c5;border-radius:16px;padding:22px 26px}
+.featured-panel>div{max-width:650px}.featured-panel .button{flex-shrink:0}
+.featured-card{border-color:#dca987}.update-info{color:#595959;font-size:.9rem}
+.feature-article{max-width:930px;margin:auto;padding:34px 20px 64px}.feature-article h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.45}
+.feature-article h2{border-left:5px solid #b34c2a;padding-left:14px;margin-top:42px}
+.feature-article .article-lead{font-size:1.08rem}.breadcrumbs{font-size:.85rem;margin-bottom:24px}
+.feature-article .notice{background:#fff0dc;color:#5b3821;border-left:4px solid #ad652c;padding:14px 18px;border-radius:5px}
+.table-scroll{max-width:100%;overflow-x:auto;border:1px solid #ddd;border-radius:12px;background:#fff}
+.comparison-table{border-collapse:collapse;width:100%;min-width:690px;font-size:.95rem}.comparison-table caption{text-align:left;padding:10px 14px;color:#595959;font-size:.86rem}
+.comparison-table th,.comparison-table td{padding:13px 12px;border-bottom:1px solid #e6e6e6;text-align:left;vertical-align:top}.comparison-table thead{background:#fbe5d5}
+.comparison-table tbody tr:nth-child(even){background:#fffaf4}.comparison-table td:nth-child(2){font-weight:800;white-space:nowrap}
+.restaurant-detail{background:#fff;border:1px solid #e6d7cd;border-radius:14px;padding:24px;margin:24px 0;scroll-margin-top:20px}
+.restaurant-detail h3{font-size:1.35rem;margin:0 0 8px}.course-price{font-size:1.75rem;color:#9e3b1c;font-weight:800;margin:8px 0}.course-price span{font-size:.85rem;color:#555;font-weight:400}
+.course-spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px}.course-spec>div{background:#fff7f0;padding:10px;border-radius:8px}.course-spec dt{font-size:.78rem;color:#666}.course-spec dd{margin:0;font-weight:700}.caution{background:#f8f8f8;padding:10px 14px;border-radius:6px}
+@media(max-width:650px){.featured-panel{display:block}.featured-panel .button{margin-top:12px}.restaurant-detail{padding:16px}.course-spec{grid-template-columns:1fr 1fr}}
