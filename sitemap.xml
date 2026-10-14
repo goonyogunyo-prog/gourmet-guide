@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://goonyogunyo-prog.github.io/gourmet-guide/</loc>
@@ -14,6 +14,12 @@
   </url>
   <url>
     <loc>https://goonyogunyo-prog.github.io/gourmet-guide/value-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://goonyogunyo-prog.github.io/gourmet-guide/restaurant-reservation-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://goonyogunyo-prog.github.io/gourmet-guide/all-you-can-drink-guide.html</loc>
   </url>
   <url>
     <loc>https://goonyogunyo-prog.github.io/gourmet-guide/about.html</loc>
