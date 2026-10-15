@@ -1,7 +1,31 @@
-グルメサイト広告導入・統合更新 2026-10-15
+【おいしい時間。｜食べログ予約導線アップデート】
 
-ZIP内のHTML/CSS/JS/XMLファイルをすべてGitHubリポジトリのルートにアップロード。既存ファイルは上書き。README_UPLOAD.txtはアップロード不要。
-今回の追加変更：Retty広告を幹事・学生系3ページ、一休.comレストラン広告をホテル・記念日系4ページに掲載。トップの広告説明と免責事項を更新。公式店舗リンクは残しています。
-前回までの未反映ファイルも同梱しています。既存のGoogle所有権確認ファイルは削除しないでください。
-Search Console: 今回広告を追加しただけのページは新規URLではないためURL検査の申請は不要。前回までの未公開記事は公開後に重要な新規記事から順に申請してください。sitemap.xmlは同梱済み、成功済みなら再送信不要。
-重要：A8.netの成果条件・広告掲載ルールを管理画面で確認してください。表示広告は特定店舗への直接予約リンクではありません。
+このZIPの7ファイルを GitHub の gourmet-guide リポジトリ直下へアップロードし、同名ファイルを上書きしてください。
+
+上書きするファイル：
+- shinjuku-nomihodai-course.html
+- shinjuku-student-nomihodai.html
+- ikebukuro-nomihodai-course-2026.html
+- tokyo-hotel-lunch-2026.html
+- tokyo-anniversary-dinner-2026.html
+- tokyo-christmas-lunch-2026.html
+- site-expansion.css
+
+変更内容：
+- 鳥元 新宿西口店
+- 炭旬 新宿西口野村ビル本店
+- 酒場 心 新宿本店
+- 大衆居酒屋 とりいちず 池袋西口店
+- 全席個室 楽蔵 池袋西口店
+- 東京プリンスホテル ブッフェダイニング ポルト
+- ヒルトン東京 マーブルラウンジ
+- ホテルモントレ銀座 エスカーレ
+の該当箇所へ、ValueCommerceで作成した「食べログで予約する（PR）」MyLinkを追加。
+公式リンクは残し、PR広告であることが分かる表示も追加しています。
+
+Google Search Console：
+新規URLはありません。URL検査の再リクエストは必須ではありません。
+sitemap.xmlは変更していないため、サイトマップの再送信も不要です。
+
+サイト：
+https://goonyogunyo-prog.github.io/gourmet-guide/
