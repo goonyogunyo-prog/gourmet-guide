@@ -1,8 +1,10 @@
-【おいしい時間。｜食べログ予約導線アップデート】
+おいしい時間。｜食べログ予約導線一本化アップデート
 
-このZIPの7ファイルを GitHub の gourmet-guide リポジトリ直下へアップロードし、同名ファイルを上書きしてください。
+目的：
+予約CTAをValueCommerceの食べログMyLinkに一本化し、
+HotPepper・Retty・一休.com・OZmall等への競合予約導線を同じ記事から外しています。
 
-上書きするファイル：
+上書き対象：
 - shinjuku-nomihodai-course.html
 - shinjuku-student-nomihodai.html
 - ikebukuro-nomihodai-course-2026.html
@@ -11,21 +13,13 @@
 - tokyo-christmas-lunch-2026.html
 - site-expansion.css
 
-変更内容：
-- 鳥元 新宿西口店
-- 炭旬 新宿西口野村ビル本店
-- 酒場 心 新宿本店
-- 大衆居酒屋 とりいちず 池袋西口店
-- 全席個室 楽蔵 池袋西口店
-- 東京プリンスホテル ブッフェダイニング ポルト
-- ヒルトン東京 マーブルラウンジ
-- ホテルモントレ銀座 エスカーレ
-の該当箇所へ、ValueCommerceで作成した「食べログで予約する（PR）」MyLinkを追加。
-公式リンクは残し、PR広告であることが分かる表示も追加しています。
+方針：
+- 「予約する」CTAは食べログPRリンクのみ
+- 店舗公式サイトは、料金・条件を確認するための「出典」リンクとして控えめに残す
+- HotPepper等の直接予約リンクは削除
+- Retty / 一休.com / OZmallの汎用広告枠は今回の対象記事から削除
+- ユーザー提供のValueCommerce MyLinkコードは変更しない
 
-Google Search Console：
-新規URLはありません。URL検査の再リクエストは必須ではありません。
-sitemap.xmlは変更していないため、サイトマップの再送信も不要です。
-
-サイト：
-https://goonyogunyo-prog.github.io/gourmet-guide/
+Search Console：
+既存URLの内部リンク・広告導線変更のみのため、URL検査の再リクエストは必須ではありません。
+sitemap.xmlの変更もありません。
