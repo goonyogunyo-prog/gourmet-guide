@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>宴会幹事の予算計算ツール｜集金額・追加料金をまとめて計算 | おいしい時間。</title>
+<meta name="description" content="宴会・飲み会の人数、コース料金、週末加算、サービス料、割引を入力して総額と1人あたりの集金額を計算。幹事の予約チェックリストと新宿のコース比較も掲載。">
+<link rel="canonical" href="https://goonyogunyo-prog.github.io/gourmet-guide/organizer-budget-tool.html">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="site-expansion.css">
+<script src="organizer-budget.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+<header class="site-header"><a class="logo" href="index.html">おいしい時間。</a><nav aria-label="メインメニュー"><a href="index.html">ホーム</a><a href="scenes.html">シーン別に探す</a><a href="articles.html">記事一覧</a><a href="about.html">運営情報</a></nav></header>
+<main id="main" class="wrap wrap-new organizer-guide">
+<nav class="breadcrumbs" aria-label="パンくず"><a href="index.html">ホーム</a> › <a href="scenes.html#organizer">幹事・宴会</a> › 予算計算ツール</nav>
+<p class="eyebrow">FOR PARTY ORGANIZERS</p>
+<h1>宴会幹事の予算計算ツール｜「集金はいくら？」をすぐ確認</h1>
+<p class="lead">飲み会の幹事で困るのは、表示されたコース料金と実際に集める金額が違うこと。人数・曜日加算・オプション・サービス料・割引を入力して、会計の目安を計算できます。</p>
+<p class="notice">この計算機は店舗の料金を自動取得しません。入力した金額をもとに試算するもので、予約確定金額ではありません。税込・税抜やサービス料の適用範囲は必ず予約先で確認してください。</p>
+<section class="calculator organizer-calculator" aria-labelledby="calc-heading">
+<h2 id="calc-heading">宴会費用・集金額シミュレーター</h2>
+<p>数字を変更すると自動計算します。例として12人・1人4,500円を初期入力しています。</p>
+<form id="organizer-calc" novalidate>
+<div class="calc-grid">
+<label for="attendees">参加人数（人）<input id="attendees" name="attendees" type="number" min="1" max="300" step="1" value="12" inputmode="numeric" required></label>
+<label for="course-price">コース料金（1人・円）<input id="course-price" name="course-price" type="number" min="0" max="1000000" step="1" value="4500" inputmode="numeric" required></label>
+<label for="day-fee">週末・繁忙日加算（1人・円）<input id="day-fee" name="day-fee" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></label>
+<label for="option-fee">飲み放題などの追加料金（1人・円）<input id="option-fee" name="option-fee" type="number" min="0" max="1000000" step="1" value="0" inputmode="numeric"></label>
+<label for="fixed-fee">会場費などの固定料金（全体・円）<input id="fixed-fee" name="fixed-fee" type="number" min="0" max="10000000" step="1" value="0" inputmode="numeric"></label>
+<label for="service-rate">サービス料率（％）<input id="service-rate" name="service-rate" type="number" min="0" max="100" step="0.1" value="0" inputmode="decimal"></label>
+<label for="discount">クーポンなどの割引（全体・円）<input id="discount" name="discount" type="number" min="0" max="10000000" step="1" value="0" inputmode="numeric"></label>
+<label for="sponsor">幹事・主催者などの負担額（全体・円）<input id="sponsor" name="sponsor" type="number" min="0" max="10000000" step="1" value="0" inputmode="numeric"></label>
+<label for="budget">1人あたりの予算上限（円）<input id="budget" name="budget" type="number" min="0" max="1000000" step="1" value="5000" inputmode="numeric"></label>
+<label for="rounding">集金単位<select id="rounding" name="rounding"><option value="1">1円単位（端数切り上げ）</option><option value="100" selected>100円単位（端数切り上げ）</option><option value="500">500円単位（端数切り上げ）</option></select></label>
+</div>
+<p class="calc-actions"><button type="reset" class="outline-button">初期値に戻す</button></p>
+</form>
+<div id="organizer-result" class="organizer-results" aria-live="polite" aria-atomic="true">
+<p>計算結果を表示するにはJavaScriptを有効にしてください。手計算する場合は、下の計算式をご利用ください。</p>
+</div>
+<p id="organizer-error" class="calc-error" role="alert" hidden></p>
+<p class="source-note">計算式：概算総額＝（1人あたりのコース＋曜日加算＋オプション）×人数＋固定費。ここにサービス料率を掛け、割引を差し引きます。集金対象額は概算総額から主催者負担を引いた額です。集金額は指定単位で切り上げます。1円未満は概算総額の段階で四捨五入します。</p>
+</section>
+<section aria-labelledby="steps"><h2 id="steps">幹事が失敗しないための5つの段取り</h2>
+<ol class="organizer-steps">
+<li><strong>候補日と人数を仮決めする。</strong> 出欠が未確定なら最大・最小人数を想定し、最低利用人数も確認。</li>
+<li><strong>コースの「実質総額」を比較する。</strong> 曜日加算、ドリンクの対象、サービス料、席料、延長料金を確認。</li>
+<li><strong>キャンセル条件を控える。</strong> 人数変更の締切と、当日キャンセルの料金を予約画面や店舗で確認。</li>
+<li><strong>集金ルールを先に共有する。</strong> 1人あたりの金額、集金方法、遅刻・欠席時の扱いを伝える。</li>
+<li><strong>前日に予約内容を再確認する。</strong> 開始時刻、予約名、人数、席、コース、アレルギー対応を照合。</li>
+</ol></section>
+<section aria-labelledby="case-heading"><h2 id="case-heading">計算例：12人で1人4,500円のコース</h2>
+<p>コース4,500円、12人、加算・割引なしの場合は<strong>合計54,000円</strong>。1人あたり4,500円なので、予算上限5,000円には収まります。</p>
+<p>仮に週末加算が1人500円なら合計60,000円、1人5,000円。さらに全体の会場費が3,000円あるなら合計63,000円となり、100円単位で切り上げた集金額は1人5,300円（計63,600円）です。余剰600円の扱いも参加者に説明しておくと安心です。</p>
+<p class="source-note">ここで使った金額は計算例であり、特定店舗の料金ではありません。</p></section>
+<section class="help-panel" aria-labelledby="related"><h2 id="related">実際のお店・コースを探す</h2>
+<p>条件が整理できたら、実店舗のコースを比較しましょう。価格・利用条件は記事内の参照元と予約先で再確認してください。</p>
+<p class="scene-links"><a class="button" href="shinjuku-nomihodai-course.html">新宿の飲み放題付きコース5選 →</a><a class="outline-button" href="shinjuku-student-nomihodai.html">新宿の格安食べ飲み放題3選 →</a></p>
+<p><a href="restaurant-reservation-guide.html">飲食店予約のチェックリスト</a> ／ <a href="all-you-can-drink-guide.html">飲み放題コースの選び方</a></p></section>
+<section aria-labelledby="faq"><h2 id="faq">よくある質問</h2>
+<h3>集金額を100円単位で切り上げるのはなぜ？</h3><p>当日の集金を簡単にするためです。切り上げた分の余剰金は、返金や二次会費への充当など、参加者と事前に扱いを決めてください。</p>
+<h3>サービス料や税金はどう入力する？</h3><p>コースが税込表示なら、その金額を入力してください。サービス料が別途発生する場合だけ料率を設定します。店舗によって計算対象が異なるため、厳密な金額は予約画面で確認してください。税抜表示の税計算はこのツールにはありません。</p>
+<h3>キャンセル料は計算できる？</h3><p>キャンセル料の自動計算には対応していません。人数変更期限やキャンセル規定は予約先の案内を優先してください。</p>
+</section>
+<p class="notice">広告・予約について：このページの内部リンクは編集記事への案内です。広告案件との提携・成果報酬の発生を保証するものではありません。</p>
+</main><footer><a href="privacy.html">プライバシーポリシー</a><a href="disclaimer.html">免責事項・広告について</a><a href="contact.html">お問い合わせ</a><p>© 2026 おいしい時間。</p></footer>
+</body></html>
