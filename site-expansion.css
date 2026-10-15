@@ -37,3 +37,6 @@ html{scroll-behavior:smooth} .site-header nav{display:flex;flex-wrap:wrap;gap:8p
 
 /* 2026-10-15: 季節限定ホテルランチ記事の目次 */
 .feature-article .chip-nav{margin:24px 0}.feature-article .chip-nav a{display:inline-block}.feature-article section.restaurant-detail{scroll-margin-top:20px}
+
+/* Sponsored link disclosure */
+.affiliate-box{margin:36px auto;padding:22px;border:1px solid #d8c8b7;border-radius:14px;background:#fff;max-width:900px}.affiliate-label{font-size:.8rem;font-weight:800;letter-spacing:.08em;color:#634c3b}.affiliate-box h2{font-size:1.2rem;margin:6px 0}.affiliate-box a{overflow-wrap:anywhere}.affiliate-box p{margin:10px 0}
