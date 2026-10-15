@@ -1,25 +1,15 @@
-おいしい時間。｜食べログ予約導線一本化アップデート
+おいしい時間。｜予約導線を食べログMyLinkだけに一本化
 
-目的：
-予約CTAをValueCommerceの食べログMyLinkに一本化し、
-HotPepper・Retty・一休.com・OZmall等への競合予約導線を同じ記事から外しています。
+今回の修正
+- 店舗・ホテルの公式プランページへのクリック可能リンクを削除
+- HotPepper / Retty / 一休 / OZmall 等の競合予約導線は掲載しない
+- 予約CTAはValueCommerceの食べログMyLinkのみ
+- 公式サイトは調査・検証に使用し、記事上は「出典：店舗・施設公式サイト（2026年10月15日確認）」のテキスト表記だけに変更
+- 内部リンク（関連記事・記事一覧など）はそのまま残す
 
-上書き対象：
-- shinjuku-nomihodai-course.html
-- shinjuku-student-nomihodai.html
-- ikebukuro-nomihodai-course-2026.html
-- tokyo-hotel-lunch-2026.html
-- tokyo-anniversary-dinner-2026.html
-- tokyo-christmas-lunch-2026.html
-- site-expansion.css
+GitHub
+ZIP内の7ファイルを gourmet-guide 直下へ上書きしてください。
 
-方針：
-- 「予約する」CTAは食べログPRリンクのみ
-- 店舗公式サイトは、料金・条件を確認するための「出典」リンクとして控えめに残す
-- HotPepper等の直接予約リンクは削除
-- Retty / 一休.com / OZmallの汎用広告枠は今回の対象記事から削除
-- ユーザー提供のValueCommerce MyLinkコードは変更しない
-
-Search Console：
-既存URLの内部リンク・広告導線変更のみのため、URL検査の再リクエストは必須ではありません。
-sitemap.xmlの変更もありません。
+Search Console
+既存URLの導線修正のみなので、URL検査の再リクエストは必須ではありません。
+sitemap.xmlの再送信も不要です。

@@ -48,3 +48,7 @@ html{scroll-behavior:smooth} .site-header nav{display:flex;flex-wrap:wrap;gap:8p
 .restaurant-detail .source-note{margin:10px 0 4px;font-size:.86rem;color:#68605b}
 .restaurant-detail .source-link{color:#6b5b50;text-decoration:underline;text-underline-offset:3px;font-weight:500}
 .restaurant-detail .source-link:hover{text-decoration-thickness:2px}
+
+/* official links removed: source text only */
+.source-text{color:#68605b;font-size:.86rem}
+.restaurant-detail .source-note{margin:10px 0 4px}
