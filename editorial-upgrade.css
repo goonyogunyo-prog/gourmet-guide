@@ -1,0 +1,15 @@
+/* 2026-10-16: magazine-style article directory and verified spot note */
+.article-directory{max-width:1120px}.directory-hero{padding:40px clamp(22px,5vw,64px);border-radius:22px;background:linear-gradient(125deg,#292321,#533b30);color:#fff8f0;margin:10px 0 30px}
+.directory-hero .eyebrow{color:#e8b18c;letter-spacing:.22em}.directory-hero h1{font-family:"Noto Serif CJK JP",serif;font-weight:700;font-size:clamp(2rem,4.8vw,3.6rem);line-height:1.45;margin:12px 0}
+.directory-hero>p:not(.eyebrow){max-width:670px;color:#f3e5dc;font-size:1.03rem}.directory-meta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:24px}
+.directory-meta span{border:1px solid #b79a85;border-radius:100px;padding:4px 12px;font-size:.8rem;color:#f5e4d9}
+.new-pick{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:28px;background:#fff;border:1px solid #e4cbb8;border-left:6px solid #aa5a39;border-radius:16px;box-shadow:0 10px 28px #4020150b}
+.new-pick>div{max-width:690px}.new-pick h2{margin:5px 0 10px;font-size:clamp(1.25rem,2.8vw,1.7rem)}.new-pick p{margin:8px 0}.new-pick .button{flex-shrink:0;text-align:center}
+.new-pick-disclaimer{font-size:.82rem;color:#625852}.section-heading{margin-bottom:20px}.section-heading h2{margin:0 0 4px;font-family:"Noto Serif CJK JP",serif;font-size:clamp(1.6rem,3vw,2rem)}
+.article-directory .editor-card{border-radius:12px;box-shadow:0 6px 18px #3b24100a;transition:transform .18s,border-color .18s}
+.article-directory .editor-card:hover{transform:translateY(-2px);border-color:#bd886c}.article-directory .editor-card h3 a{text-decoration-thickness:1px;text-underline-offset:4px}
+.spot-article .mini-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}
+.mini-compare>div{display:flex;flex-direction:column;padding:14px 18px;background:#fff;border:1px solid #ead8ca;border-radius:10px}
+.mini-compare span{font-size:.94rem}.spot-article .source-note{font-size:.87rem;color:#61564e}
+@media(max-width:700px){.new-pick{display:block}.new-pick .button{margin-top:14px}.spot-article .mini-compare{grid-template-columns:1fr}.directory-hero{padding:28px 22px}}
+@media(prefers-reduced-motion:reduce){.article-directory .editor-card{transition:none}.article-directory .editor-card:hover{transform:none}}
