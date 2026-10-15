@@ -1,0 +1,16 @@
+/* 記事一覧専用：JSが無効でも全記事を表示する */
+.article-tools{margin:28px 0 38px;padding:24px;border:1px solid #dfc5b4;border-radius:16px;background:#fff8f1}
+.article-tools h2{margin:0 0 15px;font-size:1.35rem}
+.finder-label{display:block;font-weight:800;margin-bottom:8px}
+#article-search{display:block;box-sizing:border-box;width:100%;max-width:640px;padding:12px 14px;border:2px solid #ad8d78;border-radius:10px;font:inherit;color:#242424;background:#fff}
+#article-search:focus-visible,.finder-filters button:focus-visible,#finder-reset:focus-visible{outline:3px solid #156fa5;outline-offset:3px}
+.finder-help{margin:8px 0 18px;font-size:.9rem;color:#505050}
+.finder-filters{display:flex;flex-wrap:wrap;gap:9px}
+.finder-filters button,#finder-reset{font:inherit;cursor:pointer;border:1px solid #a85c38;border-radius:999px;padding:8px 13px;background:#fff;color:#803419;font-weight:700}
+.finder-filters button[aria-pressed="true"]{background:#803419;color:#fff}
+.finder-count{font-weight:800;margin:19px 0 0}
+.finder-empty{margin:14px 0 0;padding:15px;background:#fff;border:1px dashed #b58c73;border-radius:10px}
+.finder-empty button{margin:7px 0 0}
+.finder-section{margin:35px 0}
+.filter-card[hidden],#article-tools[hidden],#finder-empty[hidden]{display:none!important}
+@media(max-width:600px){.article-tools{padding:18px 14px}.finder-filters button{font-size:.9rem;padding:8px 11px}}
