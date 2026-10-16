@@ -10,3 +10,5 @@
 #comparison+.fresh-intro{margin-top:1rem}.comparison-table tbody tr[hidden]{display:none!important}
 @media(max-width:760px){.fresh-home-spotlight,.fresh-intro{grid-template-columns:1fr;padding:1.25rem;border-radius:17px;gap:1rem}.fresh-home-numbers,.fresh-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:.4rem}.fresh-home-numbers span,.fresh-stats span{display:grid;gap:.2rem;padding:.7rem .4rem;font-size:.7rem;text-align:center}.fresh-home-numbers b,.fresh-stats b{font-size:1.05rem}.fresh-cta{width:100%;box-sizing:border-box;justify-content:center}.fresh-filter{padding:1rem}.fresh-filter-fields{display:grid;grid-template-columns:1fr;gap:.7rem}.fresh-filter-fields label{width:100%}}
 @media(prefers-reduced-motion:no-preference){.fresh-cta{transition:background-color .15s ease,transform .15s ease}.fresh-cta:hover{transform:translateY(-1px)}}
+
+.fresh-empty{background:#fff4e5;color:#563a23;border:1px solid #ebd3b2;padding:.75rem 1rem;border-radius:10px;font-weight:700}.fresh-filter-fields input:focus-visible,.fresh-filter-fields select:focus-visible,.fresh-filter-fields button:focus-visible{outline:3px solid #b98b56;outline-offset:2px}
